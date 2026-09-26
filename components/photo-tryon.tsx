@@ -215,7 +215,7 @@ export default function PhotoTryOn() {
       {/* Two-column workspace */}
       <div className="grid gap-4 md:grid-cols-2">
         {/* 1. Person Image */}
-        <section className="rounded-xl border border-border bg-surface p-5">
+        <section className="rounded-xl border border-border bg-surface p-3 sm:p-5">
           <h2 className="mb-4 font-mono text-sm font-semibold tracking-widest text-neutral-300">
             YOUR PHOTO
           </h2>
@@ -307,7 +307,7 @@ export default function PhotoTryOn() {
         </section>
 
         {/* 2. Clothing */}
-        <section className="rounded-xl border border-border bg-surface p-5">
+        <section className="rounded-xl border border-border bg-surface p-3 sm:p-5">
           <h2 className="mb-4 font-mono text-sm font-semibold tracking-widest text-neutral-300">
             CLOTHING
           </h2>
@@ -409,8 +409,7 @@ export default function PhotoTryOn() {
         )}
       </div>
 
-      {/* Result */}
-      <section className="mt-6 rounded-xl border border-border bg-surface p-5">
+      {/* Result */}        <section className="mt-6 rounded-xl border border-border bg-surface p-3 sm:p-5">
         <div className="mb-4 flex items-center justify-between">
           <h2 className="font-mono text-sm font-semibold tracking-widest text-neutral-300">
             RESULT
@@ -442,7 +441,7 @@ export default function PhotoTryOn() {
             <img
               src={resultUrl}
               alt="Try-on result"
-              className="max-h-[480px] rounded-lg border border-border object-contain"
+              className="max-h-[480px] max-w-full rounded-lg border border-border object-contain"
             />
             <div className="flex gap-2">
               <button

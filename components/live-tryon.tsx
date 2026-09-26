@@ -359,8 +359,8 @@ export default function LiveTryOn() {
     <div>
       <div className="grid gap-4 md:grid-cols-5">
         {/* Live output */}
-        <section className="md:col-span-3 rounded-xl border border-border bg-surface p-5">
-          <div className="mb-4 flex items-center justify-between">
+        <section className="rounded-xl border border-border bg-surface p-3 sm:p-5 md:col-span-3">
+          <div className="mb-4 flex flex-wrap items-center justify-between gap-2">
             <h2 className="font-mono text-sm font-semibold tracking-widest text-neutral-300">
               LIVE OUTPUT
             </h2>
@@ -405,7 +405,7 @@ export default function LiveTryOn() {
               playsInline
               muted
               autoPlay
-              className={`aspect-[16/9] w-full object-cover transition-[filter] duration-500 ${
+              className={`aspect-[3/4] w-full object-cover transition-[filter] duration-500 sm:aspect-[16/9] ${
                 mirror ? "[transform:scaleX(-1)]" : ""
               } ${mock && active ? "mock-mirror" : ""}`}
             />
@@ -472,7 +472,7 @@ export default function LiveTryOn() {
         </section>
 
         {/* Garment picker */}
-        <section className="md:col-span-2 rounded-xl border border-border bg-surface p-5">
+        <section className="rounded-xl border border-border bg-surface p-3 sm:p-5 md:col-span-2">
           <h2 className="mb-4 font-mono text-sm font-semibold tracking-widest text-neutral-300">
             GARMENT
           </h2>
@@ -539,7 +539,7 @@ export default function LiveTryOn() {
 
             <label className="flex aspect-square cursor-pointer flex-col items-center justify-center gap-1 rounded-lg border border-dashed border-border text-neutral-500 transition hover:border-accent hover:text-accent">
               <span className="text-lg leading-none">＋</span>
-              <span className="px-1 text-center text-[10px] leading-tight">
+              <span className="px-1 pb-1.5 text-center text-[10px] leading-tight">
                 Upload your own
               </span>
               <input
