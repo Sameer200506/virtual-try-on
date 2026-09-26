@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0a0a0f;
+  --surface: #12121a;
+  --border: #23232e;
+  --accent: #8b5cf6;
+  --accent-hover: #7c3aed;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+}
+
+body {
+  background: var(--background);
+  color: #e4e4ef;
+}
+
+/* Mock "AI output" stand-in for live try-on (DECART_MOCK=true): applies a
+   colored tint instead of the real garment transform, so the whole flow can
+   be exercised without credits or a camera-bound WebRTC session. */
+.mock-mirror {
+  filter: hue-rotate(90deg) saturate(1.4);
+}
